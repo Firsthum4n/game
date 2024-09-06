@@ -2,12 +2,12 @@ from .models import *
 
 player1 = Player.objects.create(player_id = 1)
 level1 = Level.objects.create(title='Уровень 1', order=1)
-prize1 = Prize.objects.create(title='Золотой ключ')
+prize1 = Prize.objects.create(title='приз 1')
 
 player_level1 = PlayerLevel.objects.create(
     player=player1,
     level=level1,
-    completed='2023-12-15',
+    completed='2024-09-06',
     is_completed=True,
     score=100
 )
